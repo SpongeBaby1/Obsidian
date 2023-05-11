@@ -7,7 +7,7 @@ crew:
 rate: 1st Finished
 info: VScode, Git, GitHub, and Obsidian.
 date: 2023-05-08-Monday 15:11:07
-update: 2023-05-11-Thursday 22:05:46
+update: 2023-05-11-Thursday 22:31:02
 tags: [read/year2023, read/month05]
 id: read20230508151107
 ---
