@@ -139,10 +139,10 @@ id: read20230508151107
 
 9. `git pull origin master --allow-unrelated-histories` 允许合并两个独立的没有共同祖先的分支历史.
 10. `git fetch origin master` 获取远程仓库的最新提交.
-   `git merge origin master --allow-unrelated-histories` 允许合并两个独立的没有共同祖先的分支历史.
-10. `git status` 检查合并后后分支的状态, 如果没有出现冲突的提示，并且状态显示为 "up to date" 或 "nothing to commit, working tree clean"，则表示合并成功.
-11. `git log` 查看分支的提交历史, 确认合并后的提交是否出现在分支的历史记录中.
-12. `git diff/show` 查看合并后的代码变动, 并根据需要进行代码审查和测试.
+    `git merge origin master --allow-unrelated-histories` 允许合并两个独立的没有共同祖先的分支历史.
+1. `git status` 检查合并后后分支的状态, 如果没有出现冲突的提示，并且状态显示为 "up to date" 或 "nothing to commit, working tree clean"，则表示合并成功.
+2. `git log` 查看分支的提交历史, 确认合并后的提交是否出现在分支的历史记录中.
+3. `git diff/show` 查看合并后的代码变动, 并根据需要进行代码审查和测试.
 总之，要确定合并是否正确，需要综合考虑分支状态、提交历史、代码差异以及功能测试等方面的信息。
 
 13. `git push -u origin master`将本地修改推送至远程仓库.
