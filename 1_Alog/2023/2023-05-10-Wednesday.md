@@ -1,0 +1,24 @@
+---
+weather: <% tp.user.getWeather() %>
+info: <% tp.file.cursor(1) %>
+date: 2023-02-28-Tuesday 19:21:25
+update: 2023-04-01-Saturday 21:12:49
+tags: [alog/year2023,alog/month05]
+id: alog20230510210126
+banner: "![[astrowalk.gif]]"
+---
+````ad-todo
+```tasks
+not done
+description does not include #check
+path does not include Get it !
+```
+```dataview
+task
+where !completed
+where !contains(text, "#check")
+```
+````
+---
+
+<% tp.file.cursor(2) %>

@@ -1,0 +1,1 @@
+[[D:\User_Wu_D\Obsidian\bookxnotepro-windows-x64-2.0.0.1101-20221220]]
