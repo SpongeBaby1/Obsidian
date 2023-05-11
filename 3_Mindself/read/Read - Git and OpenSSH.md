@@ -103,16 +103,17 @@ id: read20230508151107
 ---
 
 ## 2.3 Obsidian同步备份至github
-1. Initialization `git init`
-2. `git config --global user.name devil`, `git config --global user.email 2546342365@qq.com`
+1. `git init` 初始化本地仓库.
+2. `git config --global user.name devil`, `git config --global user.email 2546342365@qq.com` 配置全局用户名和用户邮箱.
 3. `git status` 查看分支状态, 红色表示**unstaged**.
 4. 新建`.gitignore`文件, 写入`.obsidian`和`.trash`
-5. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`
-6. `git remote -v`
-7. `git add --all`
-8. `git commit -m "20230510Firstcommit"`
-9. `git push -u origin master`
-10. `git pull origin master --allow-unrelated-histories`
+5. `git branch --list` 查看本地分支.
+6. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`
+7. `git remote -v`
+8. `git add --all`
+9. `git commit -m "20230510Firstcommit"`
+10. `git push -u origin master`
+11. `git pull origin master --allow-unrelated-histories`
 
 [【Obsidian】多端同步和备份方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1RF411K7aN/?spm_id_from=333.337.search-card.all.click&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 
