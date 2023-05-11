@@ -114,11 +114,14 @@ id: read20230508151107
 9. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`连接远程仓库. 
 10. `git remote -v` 查看远程仓库的名称和URL, 出现以下代码表示远程连接成功, 可以进行`pull/push`等操作.
    ![[Pasted image 20230511213702.png]]
-11. `git branch --all` 检查是否连接到远程仓库中的branch.
+11. **有时可能会出现网络问题**, 因此需要使用`git branch --all` 命令来**检查是否成功连接到远程仓库中的branch**.
 12. `git pull origin master --allow-unrelated-histories` 合并两个没有共同祖先的仓库.
-13. `git commit -m "20230510Firstcommit"`
-14. `git push -u origin master`
-15. `git pull origin master --allow-unrelated-histories`
+13. **如果上一步没有成功**, 还可以使用以下命令:
+    `git fetch origin master` 获取远程仓库的最新提交.
+    `git merge origin master --allow-unrelated-histories` 合并两个没有共同祖先的仓库.
+14. `git push -u origin master` 将本地仓库的修改以及pull回来的修改的合并版push至远程分支.
+15. 
+16. `git pull origin master --allow-unrelated-histories`
 
 [【Obsidian】多端同步和备份方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1RF411K7aN/?spm_id_from=333.337.search-card.all.click&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 
