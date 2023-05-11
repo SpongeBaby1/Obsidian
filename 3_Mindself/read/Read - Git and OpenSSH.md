@@ -7,7 +7,7 @@ crew:
 rate: 1st Finished
 info: VScode, Git, GitHub, and Obsidian.
 date: 2023-05-08-Monday 15:11:07
-update: 2023-05-11-Thursday 21:10:10
+update: 2023-05-11-Thursday 21:59:19
 tags: [read/year2023, read/month05]
 id: read20230508151107
 ---
@@ -114,8 +114,8 @@ id: read20230508151107
 9. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`连接远程仓库. 
 10. `git remote -v` 查看远程仓库的名称和URL, 出现以下代码表示远程连接成功, 可以进行`pull/push`等操作.
    ![[Pasted image 20230511213702.png]]
-11. `git pull origin master --allow-unrelated-histories` 合并两个没有共同祖先的仓库.
-12. `git branch -a` 查看本地和远程仓库中的所有branch.
+11. `git branch --all` 检查是否连接到远程仓库中的branch.
+12. `git pull origin master --allow-unrelated-histories` 合并两个没有共同祖先的仓库.
 13. `git commit -m "20230510Firstcommit"`
 14. `git push -u origin master`
 15. `git pull origin master --allow-unrelated-histories`
