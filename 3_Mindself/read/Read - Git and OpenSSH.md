@@ -111,7 +111,7 @@ id: read20230508151107
 6. `git add ./--all` 将所有修改提交至暂存区(**unstaged $\rightarrow$ staged**).
 7. `git status` 查看此时的分支状态, 绿色表示修改已提交至暂存区.
 8. `git commit -m '1stmodification'`将暂存区的修改提交至本地仓库.
-9. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`
+9. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`连接远程仓库.
 10. `git remote -v`
 11. `git add --all`
 12. `git commit -m "20230510Firstcommit"`
