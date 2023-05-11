@@ -7,7 +7,7 @@ crew:
 rate: 1st Finished
 info: VScode, Git, GitHub, and Obsidian.
 date: 2023-05-08-Monday 15:11:07
-update: 2023-05-11-Thursday 22:31:02
+update: 2023-05-11-Thursday 22:46:35
 tags: [read/year2023, read/month05]
 id: read20230508151107
 ---
@@ -119,9 +119,16 @@ id: read20230508151107
 13. **如果上一步没有成功**, 还可以使用以下命令:
     `git fetch origin master` 获取远程仓库的最新提交.
     `git merge origin master --allow-unrelated-histories` 合并两个没有共同祖先的仓库.
-14. `git push -u origin master` 将本地仓库的修改以及pull回来的修改的合并版push至远程分支.
-15. 
-16. `git pull origin master --allow-unrelated-histories`
+14. **如果出现合并冲突, 需要手动修改冲突的文件. 打开冲突的文件, 冲突部分会有以下显示:** 
+    `<<<<<<< HEAD`
+    // 当前分支的内容`
+    =======
+    // 远程分支的内容
+    ``>>>>>>> FETCH_HEAD
+15. 冲突修改成功后, 输入`git add <conflicted file>`.
+16. 输入`git commit -m "resolve conflicts"
+17. `git push -u origin master` 将本地仓库的修改以及pull回来的修改的合并版push至远程分支.
+
 
 [【Obsidian】多端同步和备份方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1RF411K7aN/?spm_id_from=333.337.search-card.all.click&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 
