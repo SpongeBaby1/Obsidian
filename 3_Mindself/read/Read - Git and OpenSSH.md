@@ -108,12 +108,13 @@ id: read20230508151107
 3. `git status` 查看分支状态, 红色表示**unstaged**.
 4. 新建`.gitignore`文件, 写入`.obsidian`和`.trash`
 5. `git branch --list` 查看本地分支.
-6. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`
-7. `git remote -v`
-8. `git add --all`
-9. `git commit -m "20230510Firstcommit"`
-10. `git push -u origin master`
-11. `git pull origin master --allow-unrelated-histories`
+6. `git add ./--all` 将所有修改提交至暂存区(**unstaged $\rightarrow$ staged**).
+7. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`
+8. `git remote -v`
+9. `git add --all`
+10. `git commit -m "20230510Firstcommit"`
+11. `git push -u origin master`
+12. `git pull origin master --allow-unrelated-histories`
 
 [【Obsidian】多端同步和备份方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1RF411K7aN/?spm_id_from=333.337.search-card.all.click&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 
