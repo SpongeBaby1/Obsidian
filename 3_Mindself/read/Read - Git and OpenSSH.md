@@ -109,13 +109,14 @@ id: read20230508151107
 4. 新建`.gitignore`文件, 写入`.obsidian`和`.trash`
 5. `git branch --list` 查看本地分支.
 6. `git add ./--all` 将所有修改提交至暂存区(**unstaged $\rightarrow$ staged**).
-7. `git commit -m '1stmodification'`将暂存区的修改提交至本地仓库.
-8. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`
-9. `git remote -v`
-10. `git add --all`
-11. `git commit -m "20230510Firstcommit"`
-12. `git push -u origin master`
-13. `git pull origin master --allow-unrelated-histories`
+7. `git status` 查看此时的分支状态, 绿色表示修改已提交至暂存区.
+8. `git commit -m '1stmodification'`将暂存区的修改提交至本地仓库.
+9. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`
+10. `git remote -v`
+11. `git add --all`
+12. `git commit -m "20230510Firstcommit"`
+13. `git push -u origin master`
+14. `git pull origin master --allow-unrelated-histories`
 
 [【Obsidian】多端同步和备份方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1RF411K7aN/?spm_id_from=333.337.search-card.all.click&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 
