@@ -7,7 +7,7 @@ crew:
 rate: 1st Finished
 info: VScode, Git, GitHub, and Obsidian.
 date: 2023-05-08-Monday 15:11:07
-update: 2023-05-11-Thursday 22:46:35
+update: 2023-05-12-Friday 11:16:39
 tags: [read/year2023, read/month05]
 id: read20230508151107
 ---
@@ -91,18 +91,60 @@ id: read20230508151107
 	  3. modified(已修改)
 	  4. staged(已暂存)
 	 ![[Pasted image 20230511160829.png]]
-4. Appendix
-	[04.工作区域和文件状态\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1HM411377j/?p=4&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
+
 ---
 
 ## 2.2 Github工作流
 
 
 
+
+---
+
+## 2.3 Appendix
+
+- [04.工作区域和文件状态\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1HM411377j/?p=4&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 - [十分钟学会正确的github工作流，和开源作者们使用同一套流程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV19e4y1q7JJ/?spm_id_from=333.999.0.0&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 ---
 
-## 2.3 Obsidian同步备份至github
+
+# 3 Obsidian同步备份至github
+
+## 3.1 本地数据管理
+1. `git init` 初始化本地仓库.
+2. `git config --global user.name devil`, `git config --global user.email 2546342365@qq.com` 配置全局用户名和用户邮箱.
+3. `git status` 查看分支状态, **红色**表示修改未提交至暂存区(**unstaged**).
+**4.** **新建**`.gitignore`文件, **写入**`.obsidian`和`.trash`
+5. `git branch --list` 查看本地分支.
+6. `git add ./--all` 将所有修改提交至暂存区(**unstaged $\rightarrow$ staged**).
+7. `git status` 查看此时的分支状态, **绿色**表示修改已提交至暂存区(**staged**).
+8. `git commit -m '1stmodification'`将暂存区的修改提交至本地仓库.
+---
+
+## 3.2 连接远程仓库
+1. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`连接远程仓库. 
+2. `git remote -v` 查看远程仓库的名称和URL, 出现以下代码表示远程连接成功, 可以进行`pull/push`等操作.
+   ![[Pasted image 20230511213702.png]]
+**3.** `git branch --all` 有时尽管会出现上图所示的代码, **但是可能会出现网络问题导致无法fetch/pull/push**, 因此还需要使用`git branch --all` 命令来**检查是否成功连接到远程仓库中的branch**.
+---
+
+## 3.3 pull/fetch And merge/push
+1. `git pull origin master --allow-unrelated-histories` 在成功连接到远程仓库后, 使用该命令从 `Remote` 拉取远程仓库内容, 并与本地仓库进行合并. `--allow-unrelated-histories` 表示**允许合并两个独立的没有共同历史的仓库**. 为保证成功拉取远程仓库内容, **须在拉取内容前保证本地仓库已完成 `git add`, `git commit` 操作**.
+2. 如果上一步没有成功, 还可以使用以下命令:
+    `git fetch origin master` 获取远程仓库的最新提交.
+    `git merge origin master --allow-unrelated-histories` 合并两个没有共同祖先的仓库.
+**3.** **如果出现合并冲突, 需要手动修改冲突的文件. 打开冲突的文件, 冲突部分会有以下显示:** 
+    `<<<<<<< HEAD`
+    // 当前分支的内容`
+    =======
+    // 远程分支的内容
+    ``>>>>>>> FETCH_HEAD
+**4.** `git add <conflicted file>` 提交"冲突文件"的修改至**暂存区**.
+**5.** `git commit -m "resolve conflicts"` 提交"解决冲突"的修改至**本地仓库**.
+6. `git push -u origin master` 将修改后的本地仓库 `push` 至远程仓库分支.
+---
+
+## 3.4 完整流程
 1. `git init` 初始化本地仓库.
 2. `git config --global user.name devil`, `git config --global user.email 2546342365@qq.com` 配置全局用户名和用户邮箱.
 3. `git status` 查看分支状态, 红色表示**unstaged**.
@@ -114,9 +156,9 @@ id: read20230508151107
 9. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`连接远程仓库. 
 10. `git remote -v` 查看远程仓库的名称和URL, 出现以下代码表示远程连接成功, 可以进行`pull/push`等操作.
    ![[Pasted image 20230511213702.png]]
-11. **有时可能会出现网络问题**, 因此需要使用`git branch --all` 命令来**检查是否成功连接到远程仓库中的branch**.
+11. `git branch --all` 有时尽管会出现上图所示的代码, **但是可能会出现网络问题导致无法fetch/pull/push**, 因此还需要使用`git branch --all` 命令来**检查是否成功连接到远程仓库中的branch**.
 12. `git pull origin master --allow-unrelated-histories` 合并两个没有共同祖先的仓库.
-13. **如果上一步没有成功**, 还可以使用以下命令:
+13. 如果上一步没有成功, 还可以使用以下命令:
     `git fetch origin master` 获取远程仓库的最新提交.
     `git merge origin master --allow-unrelated-histories` 合并两个没有共同祖先的仓库.
 14. **如果出现合并冲突, 需要手动修改冲突的文件. 打开冲突的文件, 冲突部分会有以下显示:** 
@@ -125,16 +167,19 @@ id: read20230508151107
     =======
     // 远程分支的内容
     ``>>>>>>> FETCH_HEAD
-15. 冲突修改成功后, 输入`git add <conflicted file>`.
-16. 输入`git commit -m "resolve conflicts"
-17. `git push -u origin master` 将本地仓库的修改以及pull回来的修改的合并版push至远程分支.
+15. `git add <conflicted file>` 提交"冲突文件"的修改至**暂存区**.
+16. `git commit -m "resolve conflicts"` 提交"解决冲突"的修改至**本地仓库**.
+17. `git push -u origin master` 将修改后的本地仓库 `push` 至远程仓库分支.
+---
 
+## 3.5 Appendix
 
-[【Obsidian】多端同步和备份方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1RF411K7aN/?spm_id_from=333.337.search-card.all.click&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
+- [【Obsidian】多端同步和备份方案\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1RF411K7aN/?spm_id_from=333.337.search-card.all.click&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 
 ---
 
-## 2.4 Git Command
+# 4 Git Command
+
 1. `git checkout -b my-feature`
 	1. `git checkout` 是 Git 命令用于切换分支或还原文件的工作树。
 	2. `-b` 选项用于创建一个新的分支.
@@ -159,7 +204,7 @@ id: read20230508151107
 
 
 
-# 3 Remote Ssh via Vscode
+# 5 Remote Ssh via Vscode
 
 
 
