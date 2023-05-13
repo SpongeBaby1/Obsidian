@@ -7,7 +7,7 @@ crew:
 rate: 1st Finished
 info: VScode, Git, GitHub, and Obsidian.
 date: 2023-05-08-Monday 15:11:07
-update: 2023-05-12-Friday 11:16:39
+update: 2023-05-12-Friday 18:30:37
 tags: [read/year2023, read/month05]
 id: read20230508151107
 ---
@@ -96,8 +96,25 @@ id: read20230508151107
 
 ## 2.2 Github工作流
 
+1.git clone // 到本地  
+2.git checkout -b xxx 切换至新分支xxx  
+（相当于复制了remote的仓库到本地的xxx分支上  
+3.修改或者添加本地代码（部署在硬盘的源文件上）  
+4.git diff 查看自己对代码做出的改变  
+5.git add 上传更新后的代码至暂存区  
+6.git commit 可以将暂存区里更新后的代码更新到本地git  
+7.git push -u origin xxx 将本地的xxx git分支上传至github上的git, -u用于关联本地与远程仓库, 一般在首次push时使用.
 
-
+---
+（如果在写自己的代码过程中发现远端GitHub上代码出现改变）
+1.git checkout main 切换回main分支  
+2.git fetch/pull origin master(main) 将远端修改过的代码再更新到本地  
+3.git checkout xxx 回到xxx分支  
+4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容  
+（中途可能会出现，rebase conflict -----》手动选择保留哪段代码）  
+5.git push -f origin xxx 把rebase后并且更新过的代码再push到远端github上  
+（-f ---》强行）  
+6.原项目主人采用pull request 中的 squash and merge 合并所有不同的commit
 
 ---
 
@@ -125,22 +142,22 @@ id: read20230508151107
 1. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`连接远程仓库. 
 2. `git remote -v` 查看远程仓库的名称和URL, 出现以下代码表示远程连接成功, 可以进行`pull/push`等操作.
    ![[Pasted image 20230511213702.png]]
-**3.** `git branch --all` 有时尽管会出现上图所示的代码, **但是可能会出现网络问题导致无法fetch/pull/push**, 因此还需要使用`git branch --all` 命令来**检查是否成功连接到远程仓库中的branch**.
+3. `git branch --all` 有时尽管会出现上图所示的代码, **但是可能会出现网络问题导致无法fetch/pull/push**, 因此还需要使用`git branch --all` 命令来**检查是否成功连接到远程仓库中的branch**.
 ---
 
-## 3.3 pull/fetch And merge/push
+## 3.3 Pull/fetch And merge/push
 1. `git pull origin master --allow-unrelated-histories` 在成功连接到远程仓库后, 使用该命令从 `Remote` 拉取远程仓库内容, 并与本地仓库进行合并. `--allow-unrelated-histories` 表示**允许合并两个独立的没有共同历史的仓库**. 为保证成功拉取远程仓库内容, **须在拉取内容前保证本地仓库已完成 `git add`, `git commit` 操作**.
 2. 如果上一步没有成功, 还可以使用以下命令:
     `git fetch origin master` 获取远程仓库的最新提交.
     `git merge origin master --allow-unrelated-histories` 合并两个没有共同祖先的仓库.
-**3.** **如果出现合并冲突, 需要手动修改冲突的文件. 打开冲突的文件, 冲突部分会有以下显示:** 
+3. **如果出现合并冲突, 需要手动修改冲突的文件. 打开冲突的文件, 冲突部分会有以下显示:** 
     `<<<<<<< HEAD`
     // 当前分支的内容`
     =======
     // 远程分支的内容
     ``>>>>>>> FETCH_HEAD
-**4.** `git add <conflicted file>` 提交"冲突文件"的修改至**暂存区**.
-**5.** `git commit -m "resolve conflicts"` 提交"解决冲突"的修改至**本地仓库**.
+4. `git add <conflicted file>` 提交"冲突文件"的修改至**暂存区**.
+5. `git commit -m "resolve conflicts"` 提交"解决冲突"的修改至**本地仓库**.
 6. `git push -u origin master` 将修改后的本地仓库 `push` 至远程仓库分支.
 ---
 
@@ -190,6 +207,18 @@ id: read20230508151107
 5. `git branch -a` 列出本地仓库和远程仓库中的所有branch, `a`是`all`的缩写.
 6. `git add ./--all` 将所有修改提交至暂存区(**unstaged $\rightarrow$ staged**).
 7. `git commit -m '1stmodification'`将暂存区的修改提交至本地仓库.
+
+8. `git remote remove origin` 去除别名为 `origin` 的远程仓库.
+9. `git remote add origin git@github.com:SpongeBaby1/obsidian-example.git` 重新连接远程仓库, 并将其命名为 `origin`.
+10. `git branch -r/git remote -v` 使用该命令查看远程仓库信息, 判断是否重连成功.
+11. `git fetch origin/origin master` **使用 `git remote add origin url` 命令重新关联远程仓库失败时**, 使用该命令拉取 `origin` 远程仓库.
+12. `git remote set-url origin git@github.com:SpongeBaby1/obsidian-example.git` 指定远程仓库 `origin` 的URL.
+13. `git branch -vv` 查看本地与远程仓库的关联情况, 如下图所示:
+    ![[Pasted image 20230512173630.png]]
+    `Merge remote-tracking branch 'origin/master'` 表示将远程跟踪分支 `origin/master` 合并到本地分支 `master` 中.
+14. `git pull origin master`
+15. 
+
 
 
 9. `git pull origin master --allow-unrelated-histories` 允许合并两个独立的没有共同祖先的分支历史.
