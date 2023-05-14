@@ -171,7 +171,8 @@ id: read20230508151107
 7. `git status` 查看此时的分支状态, 绿色表示修改已提交至暂存区.
 8. `git commit -m '1stmodification'`将暂存区的修改提交至本地仓库.
 9. `git remote add origin git@github.com:SpongeBaby1/Obsidian.git`连接远程仓库. 
-10. `git remote -v` 查看远程仓库的名称和URL, 出现以下代码表示远程连接成功, 可以进行`pull/push`等操作.
+10. `git remote rm origin`
+11. `git remote -v` 查看远程仓库的名称和URL, 出现以下代码表示远程连接成功, 可以进行`pull/push`等操作.
    ![[Pasted image 20230511213702.png]]
 11. `git branch --all` 有时尽管会出现上图所示的代码, **但是可能会出现网络问题导致无法fetch/pull/push**, 因此还需要使用`git branch --all` 命令来**检查是否成功连接到远程仓库中的branch**.
 12. `git pull origin master --allow-unrelated-histories` 合并两个没有共同祖先的仓库.
