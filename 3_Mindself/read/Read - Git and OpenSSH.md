@@ -202,11 +202,12 @@ id: read20230508151107
 	2. `-b` 选项用于创建一个新的分支.
 	3.  `my-feature` 是新分支的名称.
 2. `git remote -v`  查看远程仓库的详细信息, 包括branch名称和URL, `-v`表示详细信息.
-3. `git branch/git branch -l` 列出本地仓库中的所有branch, `l`表示`list`的缩写.
-4. `git branch -r`, 列出远程仓库中的所有branch, `r`表示`remote`的缩写.
-5. `git branch -a` 列出本地仓库和远程仓库中的所有branch, `a`是`all`的缩写.
-6. `git add ./--all` 将所有修改提交至暂存区(**unstaged $\rightarrow$ staged**).
-7. `git commit -m '1stmodification'`将暂存区的修改提交至本地仓库.
+3.  `rm -rf obsidian-example` 删除 `obsidian-example` 文件夹.
+4. `git branch/git branch -l` 列出本地仓库中的所有branch, `l`表示`list`的缩写.
+5. `git branch -r`, 列出远程仓库中的所有branch, `r`表示`remote`的缩写.
+6. `git branch -a` 列出本地仓库和远程仓库中的所有branch, `a`是`all`的缩写.
+7. `git add ./--all` 将所有修改提交至暂存区(**unstaged $\rightarrow$ staged**).
+8. `git commit -m '1stmodification'`将暂存区的修改提交至本地仓库.
 
 8. `git remote remove origin` 去除别名为 `origin` 的远程仓库.
 9. `git remote add origin git@github.com:SpongeBaby1/obsidian-example.git` 重新连接远程仓库, 并将其命名为 `origin`.
