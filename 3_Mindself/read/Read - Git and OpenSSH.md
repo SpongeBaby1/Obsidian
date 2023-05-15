@@ -7,7 +7,7 @@ crew:
 rate: 1st Finished
 info: VScode, Git, GitHub, and Obsidian.
 date: 2023-05-08-Monday 15:11:07
-update: 2023-05-12-Friday 18:30:37
+update: 2023-05-14-Sunday 22:14:13
 tags: [read/year2023, read/month05]
 id: read20230508151107
 ---
@@ -32,6 +32,8 @@ id: read20230508151107
 	- To setup `sshd` service to auto-start
 	  `Set-Service sshd -StartupType Automatic`
 	- To migrate `sshd` configuration from older versions (0.0.X.X), see [here](https://github.com/PowerShell/Win32-OpenSSH/wiki/Migrate-sshd_config-from-older-versions)
+9. `Restart-Service ssh-agent` 重启OpenSSH 客户端.
+10. `Restart-Service sshd` 重启OpenSSH 服务器.
 
 - [Home · PowerShell/Win32-OpenSSH Wiki · GitHub](https://github.com/PowerShell/Win32-OpenSSH/wiki)
 ---

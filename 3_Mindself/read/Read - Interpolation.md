@@ -2,12 +2,12 @@
 alias: Interpolation（插值）
 year: 2023
 sort: Finite difference method
-nation: 
+nation: Chinese 
 crew: 
-rate: 
+rate: 1stFinishion
 info: Chapter 5
 date: 2023-04-08-Saturday 20:40:47
-update: 2023-04-23-Sunday 20:05:43
+update: 2023-05-15-Monday 10:25:12
 tags: [read/year2023, read/month04]
 id: read20230408204047
 ---

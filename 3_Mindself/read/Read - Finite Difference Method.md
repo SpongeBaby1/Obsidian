@@ -2,12 +2,12 @@
 alias: 有限差分法
 year: 2023
 sort: numeric
-nation: 
-crew: 
-rate: 
+nation: Chinese
+crew: Sponge
+rate: 1st
 info: Chapter 5
 date: 2023-04-17-Monday 17:11:20
-update: 2023-04-21-Friday 20:41:11
+update: 2023-05-15-Monday 13:17:52
 tags: [read/year2023, read/month04]
 id: read20230417171120
 ---
@@ -81,6 +81,7 @@ title: Notion
 ```
 
 ## 1.2 Examples
+### 1.2.1
 ```ad-example
 方程组$\begin{cases} u'(x) + u(x) = \sin(x) + \cos(x), \quad x \in [0, 2 \pi]; \\ u(x=0) = 0 \end{cases}$，求解微分方程
 ```
@@ -91,9 +92,9 @@ title: Notion
 $C_{i}u_{i}+u_{i+1}=F_{i}$，其中$\begin{cases}C_{i}=h-1 \\ F_{i}=\sin(x_{i}) + \cos(x_{i}) \end{cases}$
 
 3. 写成矩阵并化简得：
-$$\left( \begin{matrix} 1 & & & & & \\ C_{1} & 1 & & & & \\ & C_{2} & 1 & & & \\ & & \ddots & \ddots & & \\ & & & C_{N-2} & 1 & \\ & & & & C_{N-2} & 1 \end{matrix} \right) \left( \begin{matrix} u_{1} \\ u_{2} \\ u_{3} \\ \vdots \\ u_{N-1} \\ u_{N} \end{matrix} \right) = \left( \begin{matrix} F_{0} \\ F_{1} \\ F_{2} \\ \vdots \\ F_{N-2} \\ F_{N-1} \end{matrix} \right) $$
+$$\left( \begin{matrix} 1 & & & & & \\ C_{1} & 1 & & & & \\ & C_{2} & 1 & & & \\ & & \ddots & \ddots & & \\ & & & C_{N-2} & 1 & \\ & & & & C_{N-1} & 1 \end{matrix} \right) \left( \begin{matrix} u_{1} \\ u_{2} \\ u_{3} \\ \vdots \\ u_{N-1} \\ u_{N} \end{matrix} \right) = \left( \begin{matrix} F_{0} \\ F_{1} \\ F_{2} \\ \vdots \\ F_{N-2} \\ F_{N-1} \end{matrix} \right) $$
 
-$$\implies \left( \begin{matrix} u_{1} \\ u_{2} \\ u_{3} \\ \vdots \\ u_{N-1} \\ u_{N} \end{matrix} \right) = \left( \begin{matrix} 1 & & & & & \\ C_{1} & 1 & & & & \\ & C_{2} & 1 & & & \\ & & \ddots & \ddots & & \\ & & & C_{N-2} & 1 & \\ & & & & C_{N-2} & 1 \end{matrix} \right)^{-1} \left( \begin{matrix} F_{0} \\ F_{1} \\ F_{2} \\ \vdots \\ F_{N-2} \\ F_{N-1} \end{matrix} \right) $$
+$$\implies \left( \begin{matrix} u_{1} \\ u_{2} \\ u_{3} \\ \vdots \\ u_{N-1} \\ u_{N} \end{matrix} \right) = \left( \begin{matrix} 1 & & & & & \\ C_{1} & 1 & & & & \\ & C_{2} & 1 & & & \\ & & \ddots & \ddots & & \\ & & & C_{N-2} & 1 & \\ & & & & C_{N-1} & 1 \end{matrix} \right)^{-1} \left( \begin{matrix} F_{0} \\ F_{1} \\ F_{2} \\ \vdots \\ F_{N-2} \\ F_{N-1} \end{matrix} \right) $$
 
 4. Python Code
 
@@ -119,7 +120,7 @@ $$\implies \left( \begin{matrix} u_{1} \\ u_{2} \\ u_{3} \\ \vdots \\ u_{N-1} \\
 
 ---
 
-# 2. Finite Difference Formula at equally spaced points（等距节点的差分公式）
+# 2. Finite Difference Formula at Equally Spaced points（等距节点的差分公式）
 
 ## 2.1 Forward difference（向前差分）
 
@@ -279,7 +280,7 @@ $$
 
 
 ---
-# 3. Newton Polynomial at equally spaced points（等距节点的牛顿插值公式）
+# 3. Newton Polynomial at Equally Spaced points（等距节点的牛顿插值公式）
 
 ```ad-info
 title: Newton polynomial
