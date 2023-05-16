@@ -2,9 +2,9 @@
 alias: 张健工程数学
 year: 2003
 sort: numeric
-rate: 
+rate: 1st
 date: 2023-01-12-Thursday 11:53:15
-update: 2023-05-15-Monday 10:31:08
+update: 2023-05-15-Monday 13:59:11
 tags: [read/year2023, read/month01]
 id: read20230112115315
 ---
@@ -33,7 +33,7 @@ id: read20230112115315
 
 ### 2.5.2 Difference
 
-[[Read - Finite Difference Method]]
+[[Read - Finite Difference]]
 
 
 ### 2.5.3 Least Square Method
