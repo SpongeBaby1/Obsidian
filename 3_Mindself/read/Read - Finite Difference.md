@@ -7,7 +7,7 @@ crew: Sponge
 rate: 1st
 info: Chapter 5
 date: 2023-04-17-Monday 17:11:20
-update: 2023-05-15-Monday 17:33:52
+update: 2023-05-16-Tuesday 16:03:35
 tags: [read/year2023, read/month04]
 id: read20230417171120
 ---
