@@ -1,6 +1,6 @@
 ---
-weather: <% tp.user.getWeather() %>
-info: <% tp.file.cursor(1) %>
+weather: ☁️   🌡️+23°C 🌬️↓15km/h
+info: 
 date: 2023-02-28-Tuesday 19:21:25
 update: 2023-04-01-Saturday 21:12:49
 tags: [alog/year2023,alog/month05]
