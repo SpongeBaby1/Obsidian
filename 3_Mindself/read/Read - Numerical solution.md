@@ -1,10 +1,10 @@
 ---
-alias: 张健工程数学
+alias: 数值解
 year: 2003
 sort: numeric
 rate: 1st
 date: 2023-01-12-Thursday 11:53:15
-update: 2023-05-15-Monday 13:59:11
+update: 2023-05-30-Tuesday 17:15:21
 tags: [read/year2023, read/month01]
 id: read20230112115315
 ---

@@ -1,10 +1,10 @@
 ---
-weather: 🌩  🌡️+35°C 🌬️↙22km/h
-info: 
+weather: <% tp.user.getWeather() %>
+info: <% tp.file.cursor(1) %>
 date: 2023-02-28-Tuesday 19:21:25
-update: 2023-05-29-Monday 16:45:10
+update: 2023-04-01-Saturday 21:12:49
 tags: [alog/year2023,alog/month05]
-id: alog20230529164240
+id: alog20230531125726
 banner: "![[astrowalk.gif]]"
 ---
 ````ad-todo
@@ -21,5 +21,4 @@ where !contains(text, "#check")
 ````
 ---
 
-# Generalized Integral Transform Technique（广义积分变换技术）
-[[Read -Analytic solution]]
+<% tp.file.cursor(2) %>
