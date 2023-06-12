@@ -1,29 +1,17 @@
 ---
-weather: ☀️   🌡️+21°C 🌬️←11km/h
-info: Acadenic website
-date: 2023-02-28-Tuesday 19:21:25
-update: 2023-05-25-Thursday 17:41:20
-tags: [alog/year2023,alog/month04]
-id: alog20230401211436
-banner: "![[astrowalk.gif]]"
+alias: Academic Website
+year: 2023.06.12
+sort: Windows
+nation: Chinese
+crew: 
+rate: 
+info: Hugo
+date: 2023-06-12-Monday 15:33:19
+update: 2023-06-12-Monday 16:02:13
+tags: [read/year2023, read/month06]
+id: read20230612153319
 ---
-````ad-todo
-```tasks
-not done
-description does not include #check
-path does not include Get it !
-```
-```dataview
-task
-where !completed
-where !contains(text, "#check")
-```
-````
 ---
-
-- [ ] Build website 
-
-[[Read - Website Building (Windows)]]
 
 # 1 Prerequisites
 
@@ -31,7 +19,7 @@ where !contains(text, "#check")
 
 - [阿里云域名部署到netlify静态服务器教程](https://jingyan.baidu.com/article/3c343ff73872d54c3679632c.html)
 - [阿里云官网](https://cn.aliyun.com/)
-- [wujiming.com](www.wujiming.com)
+- [wujiming.com](https://www.wujiming.com)
 - [域名管理-修改DNS](https://dc.console.aliyun.com/next/index?spm=5176.12818093.console-base.ddomain.29b916d0qKzdGB#/domain-list/all)
 ---
 
@@ -129,7 +117,7 @@ scoop install hugo-extended
 ---
 
 
-# 2 Build Academic Website
+# 2 Building Academic Website
 ## 1
 ### 1
 ### 2
