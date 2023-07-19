@@ -7,7 +7,7 @@ crew:
 rate: 
 info: Hugo
 date: 2023-06-12-Monday 15:33:19
-update: 2023-06-12-Monday 16:02:13
+update: 2023-07-19-Wednesday 18:28:21
 tags: [read/year2023, read/month06]
 id: read20230612153319
 ---
