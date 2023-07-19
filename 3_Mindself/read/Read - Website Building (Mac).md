@@ -66,6 +66,7 @@ brew install visual-studio-code
 
 # Appendix
 
+[01 Academic主题介绍\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1iA411v7Gi?p=2&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 [Wowchemy开源网站搭建器](https://wowchemy.com/)
 [Quickstart your Hugo website with this Hugo tutorial](https://wowchemy.com/docs/getting-started/install-hugo-extended/)
 
