@@ -7,7 +7,7 @@ crew: 1st
 rate: 1st
 info: Hugo
 date: 2023-06-12-Monday 15:51:59
-update: 2023-06-12-Monday 17:44:18
+update: 2023-06-15-Thursday 15:10:10
 tags: [read/year2023, read/month06]
 id: read20230612155159
 ---
@@ -25,7 +25,14 @@ id: read20230612155159
 
 ## 1.2 Hugo Extended
 
+- Home brew
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
+- Git golang hugo node
+```
+brew install git golang hugo node
+```
+
+- Visual Studio Code
