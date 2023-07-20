@@ -7,7 +7,7 @@ crew: 1st
 rate: 1st
 info: Hugo
 date: 2023-06-12-Monday 15:51:59
-update: 2023-07-19-Wednesday 18:24:04
+update: 2023-07-20-Thursday 03:28:29
 tags: [read/year2023, read/month06]
 id: read20230612155159
 ---
@@ -72,3 +72,5 @@ brew install visual-studio-code
 
 [Discord](https://discord.com/channels/722225264733716590/738922126966521907)
 [Simon J. Kiss](https://sjkiss.github.io/)
+[Thomas W. Price | HINTS Lab](https://isnap.csc.ncsu.edu/home/public/authors/thomas-w-price/)
+[HINTS Lab](https://isnap.csc.ncsu.edu/home/public/)
