@@ -71,6 +71,7 @@ brew install visual-studio-code
 [Quickstart your Hugo website with this Hugo tutorial](https://wowchemy.com/docs/getting-started/install-hugo-extended/)
 
 [Discord](https://discord.com/channels/722225264733716590/738922126966521907)
+[Mahyar Mohaghegh Montazeri](https://www.mahyarmmontazeri.com/)
 [Simon J. Kiss](https://sjkiss.github.io/)
 [Thomas W. Price | HINTS Lab](https://isnap.csc.ncsu.edu/home/public/authors/thomas-w-price/)
 [HINTS Lab](https://isnap.csc.ncsu.edu/home/public/)
