@@ -7,7 +7,7 @@ crew:
 rate: 1st Finished
 info: VScode, Git, GitHub, and Obsidian.
 date: 2023-05-08-Monday 15:11:07
-update: 2023-07-26-Wednesday 23:44:57
+update: 2023-07-27-Thursday 08:34:31
 tags: [read/year2023, read/month05]
 id: read20230508151107
 ---
@@ -99,7 +99,7 @@ id: read20230508151107
 ## 2.2 Github工作流
 
 1.git clone // 到本地  
-2.git checkout -b xxx 切换至新分支xxx  
+2.`git checkout -b xxx` 切换至新分支xxx  
 （相当于复制了remote的仓库到本地的xxx分支上  
 3.修改或者添加本地代码（部署在硬盘的源文件上）  
 4.git diff 查看自己对代码做出的改变  
@@ -109,8 +109,8 @@ id: read20230508151107
 
 ---
 （如果在写自己的代码过程中发现远端GitHub上代码出现改变）
-1.git checkout main 切换回main分支  
-2.git fetch/pull origin master(main) 将远端修改过的代码再更新到本地  
+1.`git checkout main` 切换回main分支  
+2.git fetch/pull origin main (master) 将远端修改过的代码再更新到本地  
 3.git checkout xxx 回到xxx分支  
 4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容  
 （中途可能会出现，rebase conflict -----》手动选择保留哪段代码）  
