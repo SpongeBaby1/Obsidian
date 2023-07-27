@@ -7,7 +7,7 @@ crew:
 rate: 1st Finished
 info: VScode, Git, GitHub, and Obsidian.
 date: 2023-05-08-Monday 15:11:07
-update: 2023-05-14-Sunday 22:14:13
+update: 2023-07-26-Wednesday 23:44:57
 tags: [read/year2023, read/month05]
 id: read20230508151107
 ---
@@ -121,7 +121,7 @@ id: read20230508151107
 ---
 
 ## 2.3 Appendix
-
+- [Git教程_bilibili](https://www.bilibili.com/video/BV1HM411377j?p=2&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 - [04.工作区域和文件状态\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1HM411377j/?p=4&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 - [十分钟学会正确的github工作流，和开源作者们使用同一套流程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV19e4y1q7JJ/?spm_id_from=333.999.0.0&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 ---
