@@ -7,7 +7,7 @@ crew:
 rate: 1st Finished
 info: VScode, Git, GitHub, and Obsidian.
 date: 2023-05-08-Monday 15:11:07
-update: 2023-07-27-Thursday 08:34:31
+update: 2023-07-28-Friday 18:03:56
 tags: [read/year2023, read/month05]
 id: read20230508151107
 ---
@@ -239,6 +239,6 @@ id: read20230508151107
 
 # 5 Remote Ssh via Vscode
 
-
+作为是叔叔
 
 ---
