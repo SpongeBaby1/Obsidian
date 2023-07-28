@@ -239,6 +239,5 @@ id: read20230508151107
 
 # 5 Remote Ssh via Vscode
 
-git测试看看是否提交。
 
 ---
