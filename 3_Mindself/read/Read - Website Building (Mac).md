@@ -64,6 +64,16 @@ brew install visual-studio-code
 ---
 
 
+
+# 3 Troubleshooting
+1. `Error: failed to resolve output format`
+
+
+
+
+
+
+
 # Appendix
 
 [01 Academic主题介绍\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1iA411v7Gi?p=2&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
