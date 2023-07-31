@@ -7,7 +7,7 @@ crew: 1st
 rate: 1st
 info: Hugo
 date: 2023-06-12-Monday 15:51:59
-update: 2023-07-20-Thursday 03:28:29
+update: 2023-07-31-Monday 23:56:44
 tags: [read/year2023, read/month06]
 id: read20230612155159
 ---
@@ -67,8 +67,9 @@ brew install visual-studio-code
 
 # 3 Troubleshooting
 1. `Error: failed to resolve output format`
-
-
+Cause 1: Hugo’s Cache
+	(A) Manually **delete Hugo’s default cache folder** and re-run Hugo. Hugo’s cache folder defaults to `$TMPDIR/hugo_cache/` on Mac/Linux and `%TMP%\hugo_cache\` on Windows.
+	or (B) **Set a custom Hugo cache folder when you run Hugo**, for example: `hugo server --cacheDir ./cache/` where `./cache/` is the path of a temporary folder to create. Then you can easily locate and delete Hugo’s cache folder should you experience this issue.
 
 
 
