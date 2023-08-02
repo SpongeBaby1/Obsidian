@@ -7,7 +7,7 @@ crew: 1st
 rate: 1st
 info: Hugo
 date: 2023-06-12-Monday 15:51:59
-update: 2023-08-01-Tuesday 00:20:34
+update: 2023-08-02-Wednesday 16:18:03
 tags: [read/year2023, read/month06]
 id: read20230612155159
 ---
@@ -52,7 +52,7 @@ brew install visual-studio-code
 # 2 Edit on Your Pc
 
 
-## Block view
+## [Block view](https://wowchemy.com/docs/getting-started/page-builder/)
 - List (1)
 - Compact (2)
 - Card (3)
@@ -60,6 +60,12 @@ brew install visual-studio-code
     - For classic APA or MLA styled publication lists
     - Optionally, edit the value of `citation_style` in `params.yaml` to APA or MLA
 - Showcase (5)
+- Masonry
+    - Intended for use with the Portfolio widget to provide a Pinterest-style layout
+- Or, **create your own view** in `layouts/partials/views/community/<name>.html` (creating the folders) and reference it as `view: community/<name>` where `<name>` is a unique name for your view (with no spaces in the name)
+    - take a look at the [code for the built-in views](https://github.com/wowchemy/wowchemy-hugo-themes/tree/main/modules/wowchemy/layouts/partials/views) for inspiration
+    - consider sharing your new view with the Community on Discord, or publishing it as a Hugo Module.
+
 
 ## 2.1 Biography
 
