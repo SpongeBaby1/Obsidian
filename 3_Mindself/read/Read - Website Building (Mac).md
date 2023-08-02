@@ -7,7 +7,7 @@ crew: 1st
 rate: 1st
 info: Hugo
 date: 2023-06-12-Monday 15:51:59
-update: 2023-08-02-Wednesday 16:18:03
+update: 2023-08-02-Wednesday 16:27:46
 tags: [read/year2023, read/month06]
 id: read20230612155159
 ---
@@ -65,6 +65,30 @@ brew install visual-studio-code
 - Or, **create your own view** in `layouts/partials/views/community/<name>.html` (creating the folders) and reference it as `view: community/<name>` where `<name>` is a unique name for your view (with no spaces in the name)
     - take a look at the [code for the built-in views](https://github.com/wowchemy/wowchemy-hugo-themes/tree/main/modules/wowchemy/layouts/partials/views) for inspiration
     - consider sharing your new view with the Community on Discord, or publishing it as a Hugo Module.
+
+
+
+## [Customise the site header](https://wowchemy.com/docs/getting-started/customization/)
+`header:
+  navbar:
+# Choose a Navigation Block
+    block: navbar
+# Display the Navigation Bar?
+    enable: true
+# Align Menu Links: Left (l), Center (c), or Right (r)
+    align: l
+# Display Your Site Title or `assets/media/logo*` Image in the Nav Bar?
+    show_logo: true
+# Show a Language Chooser (if You Have Translated Your Site content)?
+    show_translations: true
+# If `show_translations` is Enabled, Do You Wish to Display the Current Language Name?
+    show_language: false
+# Let the User Override the Default light/dark Mode of Your Theme?
+    show_day_night: true
+# Let the User Search From the Nav Bar?
+    show_search: true
+# Attempt to Automatically Highlight the Active Menu Link? Can Be Disabled for Complex Sites.
+    highlight_active_link: true`
 
 
 ## 2.1 Biography
