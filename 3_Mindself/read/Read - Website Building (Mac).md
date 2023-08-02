@@ -7,7 +7,7 @@ crew: 1st
 rate: 1st
 info: Hugo
 date: 2023-06-12-Monday 15:51:59
-update: 2023-08-02-Wednesday 21:33:04
+update: 2023-08-03-Thursday 00:11:59
 tags: [read/year2023, read/month06]
 id: read20230612155159
 ---
@@ -128,3 +128,4 @@ Cause 2: Missing Hugo Module
 [Simon J. Kiss](https://sjkiss.github.io/)
 [Thomas W. Price | HINTS Lab](https://isnap.csc.ncsu.edu/home/public/authors/thomas-w-price/)
 [HINTS Lab](https://isnap.csc.ncsu.edu/home/public/)
+[Bijan Mazaheri](https://bijanmazaheri.com/)
