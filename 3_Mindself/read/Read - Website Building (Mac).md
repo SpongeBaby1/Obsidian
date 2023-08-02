@@ -51,6 +51,16 @@ brew install visual-studio-code
 
 # 2 Edit on Your Pc
 
+
+## Block view
+- List (1)
+- Compact (2)
+- Card (3)
+- Citation (4)
+    - For classic APA or MLA styled publication lists
+    - Optionally, edit the value of `citation_style` in `params.yaml` to APA or MLA
+- Showcase (5)
+
 ## 2.1 Biography
 
 
