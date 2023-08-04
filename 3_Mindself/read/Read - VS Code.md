@@ -1,5 +1,5 @@
 ---
-alias: <% tp.file.cursor(1) %>
+alias: 
 year: <% tp.file.cursor(2) %>
 sort: <% tp.file.cursor(3) %>
 nation: <% tp.file.cursor(4) %>
