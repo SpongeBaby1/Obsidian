@@ -7,7 +7,7 @@ crew:
 rate: 1st Finished
 info: VScode, Git, GitHub, and Obsidian.
 date: 2023-05-08-Monday 15:11:07
-update: 2023-05-14-Sunday 22:14:13
+update: 2023-07-30-Sunday 14:27:56
 tags: [read/year2023, read/month05]
 id: read20230508151107
 ---
@@ -99,7 +99,7 @@ id: read20230508151107
 ## 2.2 Github工作流
 
 1.git clone // 到本地  
-2.git checkout -b xxx 切换至新分支xxx  
+2.`git checkout -b xxx` 切换至新分支xxx  
 （相当于复制了remote的仓库到本地的xxx分支上  
 3.修改或者添加本地代码（部署在硬盘的源文件上）  
 4.git diff 查看自己对代码做出的改变  
@@ -109,8 +109,8 @@ id: read20230508151107
 
 ---
 （如果在写自己的代码过程中发现远端GitHub上代码出现改变）
-1.git checkout main 切换回main分支  
-2.git fetch/pull origin master(main) 将远端修改过的代码再更新到本地  
+1.`git checkout main` 切换回main分支  
+2.git fetch/pull origin main (master) 将远端修改过的代码再更新到本地  
 3.git checkout xxx 回到xxx分支  
 4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容  
 （中途可能会出现，rebase conflict -----》手动选择保留哪段代码）  
@@ -121,7 +121,7 @@ id: read20230508151107
 ---
 
 ## 2.3 Appendix
-
+- [Git教程_bilibili](https://www.bilibili.com/video/BV1HM411377j?p=2&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 - [04.工作区域和文件状态\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1HM411377j/?p=4&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 - [十分钟学会正确的github工作流，和开源作者们使用同一套流程\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV19e4y1q7JJ/?spm_id_from=333.999.0.0&vd_source=4f4f9eaa7c3c2df88a108df3464284bc)
 ---
@@ -238,7 +238,6 @@ id: read20230508151107
 
 
 # 5 Remote Ssh via Vscode
-
 
 
 ---
